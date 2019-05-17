@@ -1,8 +1,10 @@
+import 'package:aprende_lsm/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'Widgets/FormCard.dart';
 import 'Widgets/SocialIcons.dart';
+import 'auth.dart';
 import 'CustomIcons.dart';
 
 void main() => runApp(MaterialApp(
@@ -195,7 +197,7 @@ class _MyAppState extends State<MyApp> {
                           Color(0xFFff355d),
                         ],
                         iconData: CustomIcons.googlePlus,
-                        onPressed: () {},
+                        onPressed: () => authService.googleSignIn(),
                       ),
                       SocialIcon(
                         colors: [
