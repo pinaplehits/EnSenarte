@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "718921793653",
+    "firebase_url": "https://ensenarte-a4bc8.firebaseio.com",
+    "project_id": "ensenarte-a4bc8",
+    "storage_bucket": "ensenarte-a4bc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718921793653:android:f1bea2348962b5c9",
+        "android_client_info": {
+          "package_name": "com.example.aprende_lsm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718921793653-g4839c7cefltefo3t5vbt468nr70d164.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aprende_lsm",
+            "certificate_hash": "3a483a9106d04fae699c35d1775a4236af2a1b99"
+          }
+        },
+        {
+          "client_id": "718921793653-2nrfhjal4oolh6fbnish7aju7k6o8bmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDflI0ueOi9TsZJCkY7Jx7zlVHx-xWTNOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718921793653-2nrfhjal4oolh6fbnish7aju7k6o8bmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
