@@ -50,9 +50,17 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   # assets:
   assets:
-   - assets/image_01.png
-   - assets/image_02.png
+   - assets/inicio_portada.png
+   - assets/inicio_bottom.png
    - assets/logo.png
+   - assets/a_juego.png
+   - assets/menu/a.jpg
+   - assets/menu/abecedario.jpg
+   - assets/menu/e.jpg
+   - assets/menu/vw.jpg
+   - assets/logro_principiante.png
+   - assets/logro_intermedio.png
+   - assets/logro_experto.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -77,5 +85,13 @@ flutter:
     - family: Poppins-Medium
       fonts:
         - asset: assets/Poppins-Medium.ttf
+
+    - family: Calibre-Semibold
+      fonts:
+        - asset: assets/Calibre Semibold.otf
+    
+    - family: CustomIconsMenu
+      fonts:
+        - asset: assets/menu/menu_icons.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

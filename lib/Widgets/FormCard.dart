@@ -1,5 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+String _email, _password;
+
+class EmailFieldValidator {
+  static String validate(String value) {
+    return value.isEmpty ? 'Email can\'t be empty' : null;
+  }
+}
+
+class PasswordFieldValidator {
+  static String validate(String value) {
+    return value.isEmpty ? 'Password can\'t be empty' : null;
+  }
+}
+
 
 class FormCard extends StatelessWidget {
   @override
@@ -33,27 +49,27 @@ class FormCard extends StatelessWidget {
             SizedBox(
               height: ScreenUtil.getInstance().setHeight(30),
             ),
-            Text("Correo electrónico",
-                style: TextStyle(
-                    fontFamily: "Poppins-Medium",
-                    fontSize: ScreenUtil.getInstance().setSp(26))),
-            TextField(
-              decoration: InputDecoration(
-                  hintText: "ejemplo@gmail.com",
-                  hintStyle: TextStyle(color: Colors.grey, fontSize: 12.0)),
+            TextFormField(
+              style: TextStyle(
+                  fontFamily: "Poppins-Medium",
+                  fontSize: ScreenUtil.getInstance().setSp(26)),
+              key: Key("email"),
+              decoration: InputDecoration(labelText: 'Correo Electronico'),
+              validator: EmailFieldValidator.validate,
+              onSaved: (String value) => _email = value,
             ),
             SizedBox(
               height: ScreenUtil.getInstance().setHeight(30),
             ),
-            Text("Contraseña",
-                style: TextStyle(
-                    fontFamily: "Poppins-Medium",
-                    fontSize: ScreenUtil.getInstance().setSp(26))),
-            TextField(
+            TextFormField(
+              style: TextStyle(
+                  fontFamily: "Poppins-Medium",
+                  fontSize: ScreenUtil.getInstance().setSp(26)),
+              key: Key("password"),
+              decoration: InputDecoration(labelText: "Contraseña"),
               obscureText: true,
-              decoration: InputDecoration(
-                  hintText: "Contraseña",
-                  hintStyle: TextStyle(color: Colors.grey, fontSize: 12.0)),
+              validator: EmailFieldValidator.validate,
+              onSaved: (String value) => _password = value,
             ),
             SizedBox(
               height: ScreenUtil.getInstance().setHeight(35),
